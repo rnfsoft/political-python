@@ -23,7 +23,7 @@ class CongressScrapy(scrapy.Spider):
             yield scrapy.Request(url=base_url+pdf, callback=self.save_pdf)
 
     def save_pdf(self, response):
-        path = response.url.split('/')[-1]
+        path = './data/' + response.url.split('/')[-1]
         print(path)
         self.logger.info("Saving PDF %s", path)
         with open(path, 'wb') as f:

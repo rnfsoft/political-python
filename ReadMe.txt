@@ -8,3 +8,7 @@ scrapy shell
 >> response.xpath('//td/a[@target="_blank"]/@href').extract()
 
 scrapy runspider script.py
+
+Added ./data/
+def save_pdf(self, response):
+        path = './data/' + response.url.split('/')[-1]
