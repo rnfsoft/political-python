@@ -17,7 +17,7 @@ def save_pdf(self, response):
 
 scrapy runspider script.py # scrap and download pdfs
 python parsing.py # parsing texts from pdfs then save txt files to ./data/txt/
-python extract.py # Sentiment Analysis
+python extract.py # sentiment analysis
 
 
 
